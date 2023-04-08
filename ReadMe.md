@@ -5,13 +5,13 @@ Motor World is a car listings page that allows users to view and manage car list
 To get started with the Motor World, simply visit the homepage and start exploring the available car listings. Users can also add, modify, or delete listings as per their needs.
 
 Explore Motor World
-https://abdel7004.github.io/TriviaMaster.github.io/
+https://github.com/Abdel7004/Motor-World.git
 
 ## Wire Frames
 
-![Show Route Page](https://imgur.com/a/4iqdX7i.png)
+![Show Route Page](https://imgur.com/a/4iqdX7i)
 
-![Add Car Listing](https://imgur.com/a/wlmD3po.png)
+![Add Car Listing](https://imgur.com/a/wlmD3po)
 
 ## User Stories
 
