@@ -9,9 +9,9 @@ https://github.com/Abdel7004/Motor-World.git
 
 ## Wire Frames
 
-![Show Route Page](https://imgur.com/a/4iqdX7i)
+![Show Route Page](https://imgur.com/TnOghVl.png)
 
-![Add Car Listing](https://imgur.com/a/wlmD3po)
+![Add Car Listing](https://imgur.com/0feVbBi.png)
 
 ## User Stories
 
@@ -26,11 +26,10 @@ https://github.com/Abdel7004/Motor-World.git
 
 ### Stretch Goals
 
-- As a user, I would like to see a search bar to filter the car listings.
-- As a user, I would like to see a map showing the location of each car.
-- As a user, I would like to see the most popular car listings based on user views.
+- As a user, I would like to see multiple car pictures for each listing.
+- As a user, I would login in as a user.
+- As a user, I would like to use a search bar to filter the car listings.
 - As a user, I would like to see reviews and ratings for each car listing.
-Technologies Used
 
 ### Conclusion
 
