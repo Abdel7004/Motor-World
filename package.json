@@ -1,0 +1,24 @@
+{
+  "name": "project-2---motor-world",
+  "version": "1.0.0",
+  "description": "Motor World is a car listings page that allows users to view and manage car listings. Users can easily browse the available car listings and can also create, modify, and delete listings as per their requirement.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdel7004/Motor-World.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abdel7004/Motor-World/issues"
+  },
+  "homepage": "https://github.com/Abdel7004/Motor-World#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
