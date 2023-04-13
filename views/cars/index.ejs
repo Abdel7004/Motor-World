@@ -4,6 +4,7 @@
 
     <body>
         <%- include("../partials/header.ejs") %>
+        <h1>All Car Listings</h1>
         <!-- add main element -->
             <main>
                 <!-- add div -->
@@ -14,6 +15,7 @@
                         <!-- create an article -->
                         <article>
                             <a href="/cars/<%= car._id %>">
+                                <img src=<%= car.image %> alt="car picture">
                                 <h2>
                                     <%= car.model %> - <%= car.salvaged ? "Restored" : "Wrecked" %>
                                 </h2>
