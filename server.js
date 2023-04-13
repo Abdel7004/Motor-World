@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 })
 
 const carsController = require('./controllers/cars');
-app.use('/cars', carssController);
+app.use('/cars', carsController);
 
 // Listener
 app.listen(3000, () =>
