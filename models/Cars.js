@@ -4,7 +4,8 @@ const carsSchema = new mongoose.Schema({
     model: String,
     price: String,
     horsepower: String,
-    image: String
+    image: String,
+	salvaged: Boolean
 })
 
 const Car = mongoose.model('Car', carsSchema)
