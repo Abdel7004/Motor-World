@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../partials/head.ejs") %>
+
+  <body>
+    <%- include("../partials/header.ejs") %>
+    <main>
+      <div>
+        <form action="/cars" method="post">
+          <fieldset>
+              <legend>Create a New Car Listing</legend>
+            <label>
+              Model:<input
+                type="text"
+                name="Model"
+                placeholder="enter car model"
+              />
+            </label>
+            <label>
+              Price:<input
+                type="text"
+                name="Price"
+                placeholder="enter car price"
+              />
+            </label>
+            <label>
+              Salvaged:<input type="checkbox" name="Salvaged" />
+            </label>
+          </fieldset>
+          <input type="submit" value="create new car listing" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

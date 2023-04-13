@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/head.ejs") %>
+
+    <body>
+        <%- include("../partials/header.ejs") %>
+        <!-- add main element -->
+            <main>
+                <!-- add div -->
+                 <div>   
+                    <a href="/cars/new"><button>Create A New Car Listing</button></a>
+                    <!-- loop over cars array uin for of -->
+                    <% for (car of cars) { %>
+                        <!-- create an article -->
+                        <article>
+                            <a href="/cars/<%= car._id %>">
+                                <h2>
+                                    <%= car.model %> - <%= car.salvaged ? "Restored" : "Wrecked" %>
+                                </h2>
+                            </a>
+                        </article>
+
+                        <% } %>
+                </div>
+            </main>
+    </body>
+
+</html>

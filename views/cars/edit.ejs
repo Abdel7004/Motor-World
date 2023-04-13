@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../partials/head.ejs") %>
+
+  <body>
+    <%- include("../partials/header.ejs") %>
+    <main>
+      <div>
+        <form action="/cars/<%= car._id %>?_method=PUT" method="post">
+          <fieldset>
+            <legend>Edit a <%= car.model %></legend>
+            <label>
+              Model:<input
+                type="text"
+                name="Model"
+                value="<%= car.model %>"
+                placeholder="enter car model"
+              />
+            </label>
+            <label>
+              Price:<input
+                type="text"
+                name="Price"
+                value="<%= car.price %>"
+                placeholder="enter car price"
+              />
+            </label>
+            <label>
+              Salvaged:<input type="checkbox" name="Salvaged" <%=
+              car.salvaged ? "checked" : "" %> />
+            </label>
+          </fieldset>
+          <input type="submit" value="Update <%= car.model %>" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
