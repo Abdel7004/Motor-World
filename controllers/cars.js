@@ -7,7 +7,7 @@ const Car = require('../models/Cars.js')
 router.post('/', async (req, res) => {
 	console.log(req.body)
 	req.body.salvaged = req.body.salvaged === 'on' ? true : false;
-	const fruit = await Car.create(req.body);
+	const car = await Car.create(req.body);
 	res.redirect('/cars');
 });
 
@@ -28,6 +28,7 @@ router.get('/', async (req, res) => {
 	// Car.find() is a Promise
 	// Promise is resolved or rejected
 	const cars = await Car.find({});
+    console.log(cars)
 	// then run the next line of code
 	// res.send(fruits);
 	res.render("cars/index.ejs", {cars});
@@ -57,7 +58,7 @@ router.delete('/:id', async (req, res) => {
 router.put('/:id', async (req, res) => {
 	const id = req.params.id;
 	req.body.salvaged = req.body.salvaged === 'on' ? true : false;
-	const fruit = await Car.findByIdAndUpdate(id, req.body, {
+	const car = await Car.findByIdAndUpdate(id, req.body, {
 		new: true,
 	});
 	res.redirect('/cars');

@@ -5,6 +5,7 @@ const methodOverride = require('method-override');
 const app = express();
 require('dotenv').config();
 const cors = require("cors")
+const bodyParser = require("body-parser")
 
 /////////////////////////////////////////////////////
 // Middleware
@@ -13,6 +14,9 @@ app.use(morgan("tiny")) //logging
 app.use(methodOverride("_method")) // override for put and delete requests from forms
 app.use(express.urlencoded({extended: true})) // parse urlencoded request bodies
 app.use(express.static("public")) // serve files from public statically
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 app.use(cors())
 app.get('/', (req, res) => {
