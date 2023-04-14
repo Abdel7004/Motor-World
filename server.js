@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const methodOverride = require('method-override');
 const app = express();
 require('dotenv').config();
+const cors = require("cors")
 
 /////////////////////////////////////////////////////
 // Middleware
@@ -13,6 +14,7 @@ app.use(methodOverride("_method")) // override for put and delete requests from 
 app.use(express.urlencoded({extended: true})) // parse urlencoded request bodies
 app.use(express.static("public")) // serve files from public statically
 
+app.use(cors())
 app.get('/', (req, res) => {
     res.send('default route')
 })
