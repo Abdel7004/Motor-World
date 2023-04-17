@@ -30,7 +30,7 @@ router.get('/', async (req, res) => {
 	const cars = await Car.find({});
     console.log(cars)
 	// then run the next line of code
-	// res.send(fruits);
+	// res.send(cars);
 	res.render("cars/index.ejs", {cars});
 });
 

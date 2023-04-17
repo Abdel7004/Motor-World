@@ -5,14 +5,10 @@
     <body>
         <%- include("../partials/header.ejs") %>
         <h2>All Car Listings</h2>
-        <!-- add main element -->
             <main>
-                <!-- add div -->
                  <div>   
                     <a href="/cars/new"><button>Create A New Car Listing</button></a>
-                    <!-- loop over cars array uin for of -->
                     <% for (car of cars) { %>
-                        <!-- create an article -->
                         <article>
                             <a href="/cars/<%= car._id %>">
                                 <img src=<%= car.image %> alt="car picture">
