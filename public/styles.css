@@ -1,11 +1,15 @@
 body {
   text-align: center;
+  background-image: url(https://i.imgur.com/O8yE6cg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 main {
   display: inline-block;
   flex-direction: column;
   align-items: center;
+  background-color: aliceblue;
 }
 
 article {
@@ -16,24 +20,35 @@ article {
 }
 
 img {
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 600px;
+  max-height: 600px;
   margin-bottom: 10px;
 }
 
 h2 {
   font-size: 18px;
-  margin: 0;
+  margin: 10;
   text-align: center;
 }
 
-button {
-  background-color: cadetblue;
+.delete-button {
+  background-color: rgb(245, 10, 10);
   color: white;
   border: none;
   border-radius: 5px;
   padding: 10px;
   font-size: 16px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: skyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
