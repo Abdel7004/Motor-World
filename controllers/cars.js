@@ -24,13 +24,11 @@ router.get('/:id/edit', async (req, res) => {
 
 // Index...show all car listings
 router.get('/', async (req, res) => {
-	// wait or this to complete
+	// wait for this to complete
 	// Car.find() is a Promise
 	// Promise is resolved or rejected
 	const cars = await Car.find({});
     console.log(cars)
-	// then run the next line of code
-	// res.send(cars);
 	res.render("cars/index.ejs", {cars});
 });
 
@@ -44,7 +42,6 @@ router.get('/seed', async (req, res) => {
 // Show...show one car lisitng
 router.get('/:id', async (req, res) => {
 	const car = await Car.findById(req.params.id);
-	// res.send(car);
 	res.render("cars/show.ejs", {car})
 });
 

@@ -7,9 +7,7 @@ require('dotenv').config();
 const cors = require("cors")
 const bodyParser = require("body-parser")
 
-/////////////////////////////////////////////////////
 // Middleware
-/////////////////////////////////////////////////////
 app.use(morgan("tiny")) //logging
 app.use(methodOverride("_method")) // override for put and delete requests from forms
 app.use(express.urlencoded({extended: true})) // parse urlencoded request bodies
