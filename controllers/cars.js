@@ -24,9 +24,6 @@ router.get('/:id/edit', async (req, res) => {
 
 // Index...show all car listings
 router.get('/', async (req, res) => {
-	// wait for this to complete
-	// Car.find() is a Promise
-	// Promise is resolved or rejected
 	const cars = await Car.find({});
     console.log(cars)
 	res.render("cars/index.ejs", {cars});
