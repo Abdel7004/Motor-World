@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(cors())
-app.get('/cars', (req, res) => {
+app.get('/', (req, res) => {
     res.send('default route')
 })
 
